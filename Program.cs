@@ -6,17 +6,23 @@ namespace luckysevens
     {
         static void Main(string[] args)
         {
-            string [] myArray = new string [] { "Learn" , "app", "development"};
+            int totalNumberOfSevens = 0;
+            Random rng = new Random();
 
-            int [] intArray = new int [] {232, 455, 3422, 42564};
+            int die1;
+            int die2;
+            
+            for (int i = 1; i <= 100; i++)
+            {
+                die1 = rng.Next(1,7);
+                die2 = rng.Next(1,7);
 
-            string word = myArray[1];
-
-            Console.WriteLine(word);
-
-            int arrayLength = intArray.Length;
-
-            Console.WriteLine(arrayLength.ToString());
+                if (die1 + die2 == 7 ){
+                    totalNumberOfSevens++;
+                }
+            }
+            Console.WriteLine("Out of 100 rolls, you rolled {0} sevens", totalNumberOfSevens);
+                Console.ReadLine();
         }
     }
 }
