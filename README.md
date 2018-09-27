@@ -1,4 +1,4 @@
 # LuckySevens
-Name: Christopher Landry. 
-ID: 124282. 
-Date completed 25/9/18/. 
+Name: Christopher Landry <br />
+ID: 124282 <br />
+Date completed 25/9/18/ <br />
